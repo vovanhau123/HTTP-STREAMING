@@ -42,7 +42,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/music-streaming-api.git
+git clone https://github.com/vovanhau123/HTTP-STREAMING.git
 
 # Navigate to project
 cd music-streaming-api
@@ -100,10 +100,12 @@ music-streaming-api/
 ## 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="60" height="60"/>
-  <img src="https://expressjs.com/images/express-facebook-share.png" alt="Express.js" width="60" height="60"/>
-  <img src="https://www.sqlite.org/images/sqlite370_banner.gif" alt="SQLite" width="60" height="60"/>
-  <img src="https://raw.githubusercontent.com/video-dev/hls.js/master/doc/design/logo.png" alt="HLS.js" width="60" height="60"/>
+  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+  ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+  ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 </p>
 
 - **Backend**: Node.js, Express.js
@@ -134,11 +136,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-4rge/michina - [@4rge](https://twitter.com/4rge) - contact@4rge.dev
+vovanhau123 - [@vovanhau123](https://twitter.com/4rge) - contact@4rge.dev
 
-Project Link: [https://github.com/4rge/music-streaming-api](https://github.com/4rge/music-streaming-api)
+Project Link: [https://github.com/vovanhau123/HTTP-STREAMING](https://github.com/vovanhau123/HTTP-STREAMING)
 
 ---
 <p align="center">
-  Made with ❤️ by 4rge/michina
+  Made with ❤️ by vovanhau123
 </p>
