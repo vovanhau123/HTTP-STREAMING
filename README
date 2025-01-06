@@ -1,72 +1,93 @@
-# Music Streaming API 🎵
-An HLS-based music streaming API with random playback capabilities.
-*API phát nhạc trực tuyến với tính năng streaming HLS và phát ngẫu nhiên.*
+# 🎵 Music Streaming API
 
-## Features | Tính năng
+| English | Tiếng Việt |
+|---------|------------|
+| An HLS-based music streaming API with random playback capabilities | API phát nhạc trực tuyến với tính năng streaming HLS và phát ngẫu nhiên |
 
-### 1. Music Playback | Phát Nhạc
-- HLS (HTTP Live Streaming) support | *Streaming nhạc sử dụng HLS*
-- Auto-next track functionality | *Tự động chuyển bài khi kết thúc*
-- Random playback | *Phát ngẫu nhiên*
-- Play count tracking | *Theo dõi số lần phát*
+## Features / Tính năng
 
-### 2. File Management | Quản lý File
-- Music file upload support | *Upload file nhạc*
-- Automatic processing and segmentation | *Tự động xử lý và phân đoạn file*
-- Multiple audio format support | *Hỗ trợ nhiều định dạng audio*
-- Multi-quality HLS playlist generation | *Tạo playlist HLS với nhiều chất lượng*
+### 1. Music Playback / Phát Nhạc
 
-### 3. Database Structure | Cơ sở dữ liệu
-SQLite tables:
-- `users`: User management | *Quản lý người dùng*
-- `tracks`: Song information | *Thông tin bài hát*
-- `segments`: HLS segments | *Các đoạn nhạc HLS*
-- `playlists`: HLS playlists | *Playlist HLS*
-- `user_playlists`: User playlists | *Playlist người dùng*
-- `playlist_tracks`: Playlist tracks | *Tracks trong playlist*
-- `likes`: Like tracking | *Lượt thích*
-- `comments`: User comments | *Bình luận*
+| Feature | Tính năng |
+|---------|-----------|
+| HLS (HTTP Live Streaming) support | Streaming nhạc sử dụng HLS |
+| Auto-next track functionality | Tự động chuyển bài khi kết thúc |
+| Random playback | Phát ngẫu nhiên |
+| Play count tracking | Theo dõi số lần phát |
 
-### 4. Optimizations | Tối ưu hóa
-- Search optimization indexes | *Index cho tìm kiếm nhanh*
-- SQLite WAL mode | *WAL mode cho SQLite*
-- Transaction support | *Hỗ trợ transaction*
-- Streaming buffer and cache | *Buffer và cache cho streaming*
-- Comprehensive error handling | *Xử lý lỗi*
+### 2. File Management / Quản lý File
 
-## Installation | Cài đặt
+| Feature | Tính năng |
+|---------|-----------|
+| Music file upload support | Upload file nhạc |
+| Automatic processing and segmentation | Tự động xử lý và phân đoạn file |
+| Multiple audio format support | Hỗ trợ nhiều định dạng audio |
+| Multi-quality HLS playlist generation | Tạo playlist HLS với nhiều chất lượng |
+
+### 3. Database Structure / Cơ sở dữ liệu
+
+| Table | Description | Mô tả |
+|-------|-------------|--------|
+| `users` | User management | Quản lý người dùng |
+| `tracks` | Song information | Thông tin bài hát |
+| `segments` | HLS segments | Các đoạn nhạc HLS |
+| `playlists` | HLS playlists | Playlist HLS |
+| `user_playlists` | User playlists | Playlist người dùng |
+| `playlist_tracks` | Playlist tracks | Tracks trong playlist |
+| `likes` | Like tracking | Lượt thích |
+| `comments` | User comments | Bình luận |
+
+### 4. Optimizations / Tối ưu hóa
+
+| Feature | Tính năng |
+|---------|-----------|
+| Search optimization indexes | Index cho tìm kiếm nhanh |
+| SQLite WAL mode | WAL mode cho SQLite |
+| Transaction support | Hỗ trợ transaction |
+| Streaming buffer and cache | Buffer và cache cho streaming |
+| Comprehensive error handling | Xử lý lỗi |
+
+## Installation / Cài đặt
 
 ```bash
-# Clone repository | Clone repository
+# Clone repository
 git clone [repository-url]
 cd music-streaming-api
 
-# Install dependencies | Cài đặt dependencies
+# Install dependencies
 npm install
 
-# Initialize directories | Khởi tạo thư mục
+# Initialize directories
 npm run init
 
-# Start server | Chạy server
+# Start server
 npm start
 ```
 
-Server runs at `http://localhost:3000`
-*Server sẽ chạy tại `http://localhost:3000`*
+| Note | Ghi chú |
+|------|----------|
+| Server runs at `http://localhost:3000` | Server sẽ chạy tại `http://localhost:3000` |
 
-## API Endpoints | Điểm cuối API
+## API Endpoints / Điểm cuối API
 
-### Tracks | Bài hát
-- `GET /api/tracks`: Get track list | *Lấy danh sách tracks*
-- `GET /api/tracks/:id/playlist`: Get track playlist | *Lấy playlist của track*
-- `GET /api/tracks/random`: Get random track | *Lấy track ngẫu nhiên*
-- `GET /api/tracks/random/:genre`: Get random track by genre | *Lấy track ngẫu nhiên theo thể loại*
-- `POST /api/tracks/:id/play`: Update play count | *Cập nhật lượt phát*
+### Tracks / Bài hát
 
-### Upload | Tải lên
-- `POST /upload`: Upload new music file | *Upload file nhạc mới*
+| Endpoint | Description | Mô tả |
+|----------|-------------|--------|
+| `GET /api/tracks` | Get track list | Lấy danh sách tracks |
+| `GET /api/tracks/:id/playlist` | Get track playlist | Lấy playlist của track |
+| `GET /api/tracks/random` | Get random track | Lấy track ngẫu nhiên |
+| `GET /api/tracks/random/:genre` | Get random track by genre | Lấy track ngẫu nhiên theo thể loại |
+| `POST /api/tracks/:id/play` | Update play count | Cập nhật lượt phát |
 
-## Project Structure | Cấu trúc thư mục
+### Upload / Tải lên
+
+| Endpoint | Description | Mô tả |
+|----------|-------------|--------|
+| `POST /upload` | Upload new music file | Upload file nhạc mới |
+
+## Project Structure / Cấu trúc thư mục
+
 ```
 ├── data/           # Database
 ├── public/         
@@ -84,31 +105,48 @@ Server runs at `http://localhost:3000`
 └── package.json
 ```
 
-## Technologies | Công nghệ
+## Technologies / Công nghệ
+
 - Node.js
 - Express.js
 - SQLite3
 - HLS.js
 - Multer
 
-## Roadmap | Tính năng đang phát triển
-- [ ] User authentication | *Xác thực người dùng*
-- [ ] Playlist management | *Quản lý playlist*
-- [ ] Likes and comments | *Like và comment*
-- [ ] Advanced search | *Tìm kiếm nâng cao*
-- [ ] Song recommendations | *Gợi ý bài hát*
-- [ ] Listening statistics | *Thống kê nghe nhạc*
+## Roadmap / Tính năng đang phát triển
 
-## Contributing | Đóng góp
-Contributions are welcome! Please follow these steps:
-*Mọi đóng góp đều được chào đón. Vui lòng:*
+| Feature | Tính năng |
+|---------|-----------|
+| ⬜ User authentication | Xác thực người dùng |
+| ⬜ Playlist management | Quản lý playlist |
+| ⬜ Likes and comments | Like và comment |
+| ⬜ Advanced search | Tìm kiếm nâng cao |
+| ⬜ Song recommendations | Gợi ý bài hát |
+| ⬜ Listening statistics | Thống kê nghe nhạc |
 
-1. Fork the project | *Fork project*
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request | *Tạo Pull Request*
+## Contributing / Đóng góp
 
-## License | Giấy phép
-MIT License - see [LICENSE](LICENSE) for details
-*MIT License - xem [LICENSE](LICENSE) để biết thêm chi tiết*
+| English | Tiếng Việt |
+|---------|------------|
+| Contributions are welcome! Please follow these steps: | Mọi đóng góp đều được chào đón. Vui lòng: |
+
+1. `Fork the project` / *Fork project*
+2. `Create your feature branch` / *Tạo branch mới*
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. `Commit changes` / *Commit thay đổi*
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. `Push to branch` / *Push lên branch*
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. `Open a Pull Request` / *Tạo Pull Request*
+
+## License / Giấy phép
+
+| English | Tiếng Việt |
+|---------|------------|
+| MIT License - see [LICENSE](LICENSE) for details | MIT License - xem [LICENSE](LICENSE) để biết thêm chi tiết |
