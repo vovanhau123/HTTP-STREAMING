@@ -42,7 +42,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/vovanhau123/HTTP-STREAMING.git
+git clone https://github.com/yourusername/music-streaming-api.git
 
 # Navigate to project
 cd music-streaming-api
@@ -134,11 +134,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+4rge/michina - [@4rge](https://twitter.com/4rge) - contact@4rge.dev
 
-Project Link: [https://github.com/vovanhau123/HTTP-STREAMING](https://github.com/vovanhau123/HTTP-STREAMING)
+Project Link: [https://github.com/4rge/music-streaming-api](https://github.com/4rge/music-streaming-api)
 
 ---
 <p align="center">
-  Made with ❤️ by vovanhau123
+  Made with ❤️ by 4rge/michina
 </p>
