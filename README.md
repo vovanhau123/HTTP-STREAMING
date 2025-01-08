@@ -25,6 +25,7 @@
 | Table | Purpose |
 |-------|---------|
 | `users` | User management & authentication |
+| `albums` | Album metadata & cover art |
 | `tracks` | Song metadata & file paths |
 | `segments` | HLS segment information |
 | `playlists` | HLS & user playlist data |
@@ -71,11 +72,45 @@ npm start
 | `GET` | `/api/tracks/random/:genre` | Get random track by genre |
 | `POST` | `/api/tracks/:id/play` | Update play count |
 
+### 📤� Albums
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/albums` | Get all albums |
+| `GET` | `/api/albums/:id` | Get album details with tracks |
+| `POST` | `/api/albums` | Create new album |
+| `PUT` | `/api/albums/:id` | Update album |
+| `DELETE` | `/api/albums/:id` | Delete album |
+| `GET` | `/api/albums/artist/:artist` | Get albums by artist |
+| `GET` | `/api/albums/genre/:genre` | Get albums by genre |
+
 ### 📤 Upload
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `POST` | `/upload` | Upload new music file |
+
+### 🔐 Authentication
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/auth/register` | Register new user |
+| `POST` | `/api/auth/verify` | Verify email with code |
+
+#### Register Request Body
+```json
+{
+    "email": "user@example.com",
+    "password": "StrongPass123",
+    "username": "username"
+}
+```
+
+#### Verify Request Body
+```json
+{
+    "code": "123456"
+}
 
 ## 📂 Project Structure
 
@@ -94,6 +129,7 @@ music-streaming-api/
 │   ├── services/      # Business logic
 │   └── server.js      # Entry point
 ├── uploads/           # Uploaded files
+│   └── album-covers/  # Album cover images
 └── package.json
 ```
 
